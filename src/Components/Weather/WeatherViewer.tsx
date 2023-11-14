@@ -38,7 +38,7 @@ export const WeatherViewer: React.FC<WeatherViewerProps> = ({ cityData, addToFav
     setLoading(true);
     axios
       .get(
-        `http://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=bE26rmqv0WnEvG6cLJ6ZxUiONkEDSA1C`
+        `https://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=bE26rmqv0WnEvG6cLJ6ZxUiONkEDSA1C`
       )
       .then((res) => {
         setData(res.data[0]);
