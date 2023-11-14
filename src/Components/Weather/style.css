@@ -1,0 +1,43 @@
+.weather{
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details{
+    display: flex;
+}
+.add-to-fav{
+    transform: translate(800px,-160px);
+    background-color: rgb(30, 53, 100);
+    color:white;
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 24px;
+}
+.rmv-f-fav{    
+    transform: translate(800px,-160px);
+    background-color: rgb(30, 53, 100);
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 24px;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .rmv-f-fav{
+        transform: translate(230px,-65px);
+        z-index: 2;
+    }
+    .add-to-fav{
+        transform: translate(250px,-65px);
+    }
+    .city-country{
+        transform: translateX(25px);
+    }
+    .details{
+        transform: translateX(25px);
+    }   
+}
