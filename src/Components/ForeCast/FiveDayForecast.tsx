@@ -27,7 +27,7 @@ const FiveDayForecast: React.FC<FiveDayForecastProps> = ({ cityKey }) => {
   const [forecast, setForecast] = useState<Forecast[]>([]);
 
   useEffect(() => {
-    axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=bE26rmqv0WnEvG6cLJ6ZxUiONkEDSA1C&metric=true`)
+    axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}?apikey=bE26rmqv0WnEvG6cLJ6ZxUiONkEDSA1C&metric=true`)
       .then((res) => {
         setForecast(res.data.DailyForecasts);
       }).catch(err => console.log(err.message));
