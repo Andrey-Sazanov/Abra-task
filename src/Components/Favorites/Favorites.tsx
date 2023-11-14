@@ -40,7 +40,7 @@ const Favorites: React.FC<FavoritesProps> = ({ favorites, selectFavorite }) => {
   }, [favorites]);
 
   const fetchTemperature = (locationKey: string) => {
-    axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO`)
+    axios.get(`https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO`)
     .then((res) => {
       setTemperatureData(prevState => ({...prevState, [locationKey]: res.data[0].Temperature.Metric.Value}));
     }).catch(err => console.log(err.message));
