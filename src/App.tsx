@@ -32,7 +32,7 @@ function App() {
   const [coordinates, setCoordinates] = useState<{ lat: number, lon: number } | null>(null);
   const fetchCity = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=bE26rmqv0WnEvG6cLJ6ZxUiONkEDSA1C&q=${citySearch}`)
+    axios.get(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=bE26rmqv0WnEvG6cLJ6ZxUiONkEDSA1C&q=${citySearch}`)
     .then((res)=>{
       setCityData(res.data[0]);
       setCitySearch('');
