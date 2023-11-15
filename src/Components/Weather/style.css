@@ -35,9 +35,9 @@
         transform: translate(250px,-65px);
     }
     .city-country{
-        transform: translateX(25px);
+        transform: translateX(29px);
     }
     .details{
-        transform: translateX(25px);
+        transform: translateX(29px);
     }   
 }
